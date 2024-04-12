@@ -54,8 +54,8 @@ def scale_free( n, md, seed ):
     g = nx.DiGraph()
 #     g.add_nodes_from( range(n) )
     g.add_edges_from( edges )
-    mapping = dict(zip(g, range(0, len(g))))  # 去除孤立节点编号重排
-    g = nx.relabel_nodes(g, mapping)
+    mapping = dict(zip(g, range(0, len(g))))  # delete isolated nodes
+    g = nx.relabel_nodes(g, mapping)   # renumber the nodes
 
     
     return g
@@ -83,7 +83,7 @@ def rk4( theta, Ar, r, D, cr, h, diff_func ):  # [node, hidden_channel]
 def simulation(count):
     
     time_start = time.time()    
-    _, decimals = str(time_start).split('.')  # 取当前时间（float）的小数部分作为种子
+    _, decimals = str(time_start).split('.')  # Take the fractional portion of the current time as seed
     seed = int(decimals)
     np.random.seed(seed)
     
@@ -204,7 +204,7 @@ def simulation(count):
         
 
 
-def parallel(core=30):
+def parallel(core=60):
 #     global p
     pool = mp.Pool(core)
 
