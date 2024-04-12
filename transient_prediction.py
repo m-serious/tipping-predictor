@@ -22,7 +22,7 @@ from sklearn.metrics import mean_squared_error, mean_absolute_error
 torch.cuda.set_device(1)
 
 seed = 1024
-for time in range(3, 6):#[2,3,4]:
+for time in range(10):
     data_num = 0
     for count in np.arange(600):
         for j in range(55):
