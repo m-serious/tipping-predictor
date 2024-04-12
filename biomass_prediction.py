@@ -153,7 +153,7 @@ for time in range(12):#[0,1]:
                     mae_best = mae
                     test = mae_test
                     best_epoch = epoch
-                    np.savez(f'prediction/acc-{removal_ratio}-{time}.npz', label=labels, preds = preds)  # hidden_nodes
+                    np.savez(f'prediction/acc-{removal_ratio}-{time}.npz', label=labels, preds = preds) 
                     torch.save(model.state_dict(), f"prediction/model_parameter-{removal_ratio}-{time}.pkl")
                     print(f'Accuracy has been updated, and new model has been saved!')
                 print(f'times={time}, nodes_removal_ratio={removal_ratio}, epoch:{epoch+1}, until now，the best mae loss on Val dataset:{mae_best}，Test dataset:{test}, best epoch:{best_epoch+1}')
