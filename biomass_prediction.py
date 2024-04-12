@@ -21,7 +21,7 @@ import time as ti
 torch.cuda.set_device(1)
 
 seed = 1024
-for time in range(12):#[0,1]:
+for time in range(10):
     for removal_ratio in [0]:#np.arange(0, 1, 0.05):
         data_num = 0
         for count in np.arange(600):
