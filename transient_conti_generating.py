@@ -34,7 +34,7 @@ def rk4( theta, Ar, h, diff ):  # [node, hidden_channel]
 def simulation(count):
     
     time_start = time.time()    
-    _, decimals = str(time_start).split('.')  # 取当前时间（float）的小数部分作为种子
+    _, decimals = str(time_start).split('.') 
     seed = int(decimals)
     np.random.seed(seed)
     
@@ -155,25 +155,22 @@ def simulation(count):
 #     pt = (m+20)*0.01
     pt = (m+20+1)*0.01
     save_data_number = 0
-    # detect judgement
-    if state[m+20] - state[m+21] > 5:
-        print(f"already found bifurcation in count: {count}, start saving data!")
-        print(f"dev:{dom_eval_re[20:95].max()}, argdev:{m+20}, delta:{state[m+20] - state[m+21]}")
-        for i in range(55):
-#             p = pt+i*0.01
-            np.savez(f'transient_conti/data{count}_{i}.npz', x = rx[m-i:m+20-i].T, y=np.array([pt]), w_loss=np.array([i+1]))
-            if m-i == 0:
-                break
-        save_data_number = i + 1
-        print(f"count: {count} saves {i+1} data")
-    else:
-#         save_data_number = 0
-        print(f"no bifurcation found in count: {count}, dev:{dom_eval_re[20:95].max()}, argdev:{m+20}, delta:{state[m+20] - state[m+21]}")
 
+    print(f"Start saving data!")
+    print(f"dev:{dom_eval_re[20:95].max()}, argdev:{m+20}, delta:{state[m+20] - state[m+21]}")
+    for i in range(55):
+#             p = pt+i*0.01
+        np.savez(f'transient_conti/data{count}_{i}.npz', x = rx[m-i:m+20-i].T, y=np.array([pt]), w_loss=np.array([i+1]))
+        if m-i == 0:
+            break
+    save_data_number = i + 1
+    print(f"count: {count} saves {i+1} data")
+
+    
     return save_data_number
 
 
-def parallel(core=20):
+def parallel(core=60):
 #     global p
     pool = mp.Pool(core)
 
