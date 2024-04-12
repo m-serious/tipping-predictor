@@ -148,7 +148,7 @@ for time in range(12):#[0,1]:
                 mae_test = mean_absolute_error(labels, preds)
 
                 print(f'Val dataset, mae loss:', mae)
-                print(f'Test dataset, mae loss::', mae_test)
+                print(f'Test dataset, mae loss:', mae_test)
                 if mae < mae_best:
                     mae_best = mae
                     test = mae_test
