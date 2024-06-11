@@ -2,6 +2,7 @@
 This repository contains the codes to early predictor for the onset of critical transitions in networked dynamical systems.
 
 If you use anything in this repository, then please cite:
+
 Zijia Liu, Xiaozhu Zhang, Xiaolei Ru, Ting-Ting Gao, Jack Murdoch Moore, and Gang Yan, _Early Predictor for the Onset of Critical Transitions in Networked Dynamical Systems_, [Physical Review X, in press](https://journals.aps.org/prx/accepted/e2075Kb9Zde1860517e53a2509870f0dbc868ad39)
 
 ## Files
@@ -15,5 +16,5 @@ Zijia Liu, Xiaozhu Zhang, Xiaolei Ru, Ting-Ting Gao, Jack Murdoch Moore, and Gan
 + `CTPiCS.py` - File to pre-train joint model on massive synthetic data of three systems.
 + `CTPiCS2real.py` - File to fine-tune joint model and then predict a new empirical system.
 
-## Folders
+## Folder
 + `empirical_data` - Data of a new empirical system.
