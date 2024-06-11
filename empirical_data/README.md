@@ -6,7 +6,7 @@ If you use these data in a publication, project, etc., then please also cite:
 
 1. [Tree coverage](https://doi.org/10.5067/MODIS/MOD44B.061): DiMiceli, C., R. Sohlberg, J. Townshend. MODIS/Terra Vegetation Continuous Fields Yearly L3 Global 250m SIN Grid V061. 2022, distributed by NASA EOSDIS Land Processes DAAC. Accessed YYYY-MM-DD.
 
-2. [Rainfall](10.5067/TRMM/TMPA/MONTH/7): Tropical Rainfall Measuring Mission (TRMM) (2011), TRMM (TMPA/3B43) Rainfall Estimate L3 1 month 0.25 degree x 0.25 degree V7, Greenbelt, MD, Goddard Earth Sciences Data and Information Services Center (GES DISC), Accessed: YYYY-MM-DD.
+2. [Rainfall](https://doi.org/10.5067/TRMM/TMPA/MONTH/7): Tropical Rainfall Measuring Mission (TRMM) (2011), TRMM (TMPA/3B43) Rainfall Estimate L3 1 month 0.25 degree x 0.25 degree V7, Greenbelt, MD, Goddard Earth Sciences Data and Information Services Center (GES DISC), Accessed: YYYY-MM-DD.
 
 ## Folders
 + `fine_tuning` - Data used to fine-tune on pretrained model.
