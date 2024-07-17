@@ -3,7 +3,9 @@ This repository contains the codes to early predictor for the onset of critical 
 
 If you use anything in this repository, then please cite:
 
-Zijia Liu, Xiaozhu Zhang, Xiaolei Ru, Ting-Ting Gao, Jack Murdoch Moore, and Gang Yan, _Early Predictor for the Onset of Critical Transitions in Networked Dynamical Systems_, [Physical Review X, in press](https://journals.aps.org/prx/accepted/e2075Kb9Zde1860517e53a2509870f0dbc868ad39)
+Zijia Liu, Xiaozhu Zhang, Xiaolei Ru, Ting-Ting Gao, Jack Murdoch Moore, and Gang Yan, _Early Predictor for the Onset of Critical Transitions in Networked Dynamical Systems_, [Physical Review X, 2024](https://journals.aps.org/prx/accepted/e2075Kb9Zde1860517e53a2509870f0dbc868ad39)
+
+This paper has also been selected for highlighting by APS, and Prof. Naoki Masuda has penned a captivating viewpoint entitled [_"Predicting Tipping Points in Complex Systems"_](https://physics.aps.org/articles/v17/110).
 
 ## Files
 + `biomass_data_generating.py` - File to generate data for resource biomass systems.
