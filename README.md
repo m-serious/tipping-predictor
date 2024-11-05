@@ -5,7 +5,7 @@ If you use anything in this repository, then please cite:
 
 Zijia Liu, Xiaozhu Zhang, Xiaolei Ru, Ting-Ting Gao, Jack Murdoch Moore, and Gang Yan, [_Early Predictor for the Onset of Critical Transitions in Networked Dynamical Systems_](https://journals.aps.org/prx/accepted/e2075Kb9Zde1860517e53a2509870f0dbc868ad39), Physical Review X, 2024
 
-This paper has also been selected for highlighting by APS, and Prof. Naoki Masuda has penned a captivating viewpoint entitled [_"Predicting Tipping Points in Complex Systems"_](https://physics.aps.org/articles/v17/110).
+This paper has received prominent recognition, having been featured in _Nature Physics_ through Dr. Karen Mudryk’s article titled [_Precise Precognition_](https://www.nature.com/articles/s41567-024-02623-9). Additionally, the American Physical Society (APS) has selected it for highlighting, with Prof. Naoki Masuda penning a captivating viewpoint entitled [_"Predicting Tipping Points in Complex Systems"_](https://physics.aps.org/articles/v17/110).
 
 ## Files
 + `biomass_data_generating.py` - File to generate data for resource biomass systems.
